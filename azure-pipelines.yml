@@ -26,11 +26,10 @@ steps:
 
 - task: AzureRmWebAppDeployment@4
   inputs:
-    ConnectionType: 'azure'
     azureSubscription: 'TestPipeLines'
     appType: 'webApp'
     WebAppName: 'MDPipelineTest'
     deployToSlotOrASE: true
     ResourceGroupName: 'TestPipeLines'
-    SlotName: 'staging'
+    SlotName: 'production'
     packageForLinux: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
