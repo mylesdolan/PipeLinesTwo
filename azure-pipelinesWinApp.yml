@@ -29,7 +29,5 @@ steps:
     azureSubscription: 'TpWinMD'
     appType: 'webApp'
     WebAppName: 'TestPipeLinesWindows'
-    deployToSlotOrASE: true
     ResourceGroupName: 'TestPipeLinesWinMd'
-    SlotName: 'production'
     package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
