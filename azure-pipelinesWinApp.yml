@@ -32,4 +32,4 @@ steps:
     deployToSlotOrASE: true
     ResourceGroupName: 'TestPipeLinesWinMd'
     SlotName: 'production'
-    packageForLinux: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
