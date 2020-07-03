@@ -31,4 +31,4 @@ steps:
     appName: 'TestPipeLinesWindows'
     ResourceGroupName: 'TestPipeLinesWinMd'
     package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    customWebConfig: '-Handler iisnode -NodeStartFile server.js -appType node'
+    
