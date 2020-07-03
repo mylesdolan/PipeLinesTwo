@@ -28,6 +28,7 @@ steps:
   inputs:
     azureSubscription: 'TpWinMD'
     appType: 'webApp'
-    WebAppName: 'TestPipeLinesWindows'
+    appName: 'TestPipeLinesWindows'
     ResourceGroupName: 'TestPipeLinesWinMd'
     package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    customWebConfig: '-Handler iisnode -NodeStartFile server.js -appType node'
